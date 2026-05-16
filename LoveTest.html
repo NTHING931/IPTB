@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恋爱测试</title>
+</head>
+<style>
+    .body{
+        background:linear-gradient(to left top, rgba(100, 232, 255,1),rgb(255, 152, 250))
+    }
+    .button{
+        background-color: rgb(70, 113, 255);
+        height: 60px;
+        width: 100px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        
+    }
+    .Content{
+        height: 200px;
+        width: 200px;
+        align-items: center;
+        position: relative;
+        left: 45%;
+        top: 45%;
+    }
+    .Content input{
+        margin: 5px;
+        position: relative;
+        top: 30%;
+    }
+    .Content button{
+        margin: 5px;
+        position: relative;
+        top: 35%;
+        left: 60px;
+    }
+    .Content h1{
+        text-align: center;
+    }
+</style>
+<script>
+    var startTest = function(){
+        var image = document.getElementById("image");
+        image.setAttribute("style","background:black;height: 500px;margin: auto;margin-top: 15vh;");
+        var input=document.getElementById("input").style.display="none";
+        var button=document.getElementById("button").style.display="none";
+    }
+
+</script>
+<body class="body">
+    <div class="Content">
+        <h1>输入名字开始恋爱测试</h1>
+        <input type="text"name="name" placeholder="请输入你的名字"id="input">
+        <button onclick="startTest()"id="button">提交</button>
+    </div>
+    <div id="image" class="image"><a href=""></a></div>
+</html>
