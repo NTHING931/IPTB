@@ -42,21 +42,33 @@
     .Content h1{
         text-align: center;
     }
+    .image{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }   
+    .image a{
+        height: 200px;
+        width: 200px;
+        align-items: center;
+    }
 </style>
 <script>
     var startTest = function(){
         var image = document.getElementById("image");
-        image.setAttribute("style","background:black;height: 500px;margin: auto;margin-top: 30px;");
+        image.setAttribute("style","height: 500px;margin: auto;margin-top: 30px;");
         var input=document.getElementById("input").style.display="none";
         var button=document.getElementById("button").style.display="none";
+        var Content=document.getElementById("Content").style.display="none";
+        var ph=document.getElementById("ph").src="https://i1.hdslb.com/bfs/new_dyn/e533e4c408db6539b541761de797c4ad20455752.png@1000w_1000h.avif"
     }
 
 </script>
 <body class="body">
-    <div class="Content">
+    <div class="Content" id="Content">
         <h1>输入名字开始恋爱测试</h1>
         <input type="text"name="name" placeholder="请输入你的名字"id="input">
         <button onclick="startTest()"id="button">提交</button>
     </div>
-    <div id="image" class="image"><a href=""></a></div>
+    <div id="image" class="image"><img src="" id="ph"></img></div>
 </html>
